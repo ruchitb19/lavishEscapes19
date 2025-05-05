@@ -246,7 +246,8 @@
                     <!-- Guide 1 -->
                     <div
                         class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-                        <img src="frontend/assets/images/Isabella Martinez.jpg" alt="Guide" class="w-full h-64 object-center">
+                        <img src="frontend/assets/images/Isabella Martinez.jpg" alt="Guide"
+                            class="w-full h-64 object-center">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Isabella Martinez</h3>
                             <p class="text-gray-600 mb-2">Barcelona, Spain</p>
@@ -271,7 +272,8 @@
                     <!-- Guide 3 -->
                     <div
                         class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-                        <img src="frontend/assets/images/Sophia Laurent.jpeg" alt="Guide" class="w-full h-64 object-cover">
+                        <img src="frontend/assets/images/Sophia Laurent.jpeg" alt="Guide"
+                            class="w-full h-64 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Sophia Laurent</h3>
                             <p class="text-gray-600 mb-2">Paris, France</p>
@@ -348,7 +350,8 @@
                     <div
                         class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
                         <div class="relative">
-                            <img src="frontend/assets/images/Asian Elegance.jpeg" alt="Package" class="w-full h-60 object-cover">
+                            <img src="frontend/assets/images/Asian Elegance.jpeg" alt="Package"
+                                class="w-full h-60 object-cover">
                             <div
                                 class="absolute top-4 right-4 bg-luxury-gold text-white px-3 py-1 rounded-full text-sm font-medium">
                                 14 Days</div>
@@ -667,6 +670,8 @@
                                     class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-luxury-gold focus:border-luxury-gold"
                                     required></textarea>
                             </div>
+                            <p id="statusMessage" class="hidden text-center text-lg mt-4"></p>
+
                             <div>
                                 <button type="submit"
                                     class="px-8 py-3 bg-luxury-navy text-white rounded-full hover:bg-luxury-gold transition-colors duration-300">Send
@@ -811,12 +816,14 @@
                     <h4 class="text-white font-semibold text-lg mb-4">Newsletter</h4>
                     <p class="mb-4">Subscribe to our newsletter for exclusive travel ideas, luxury insights, and special
                         offers.</p>
-                    <form class="flex flex-col sm:flex-row gap-2">
-                        <input type="email" placeholder="Your Email Address"
+                    <form id="newsletterForm" class="flex flex-col sm:flex-row gap-2">
+                        <input type="email" id="newsletterEmail" name="email" placeholder="Your Email Address"
                             class="px-4 py-2 rounded-full text-black w-full" required>
-                        <button
+                        <button type="submit"
                             class="bg-luxury-gold text-luxury-navy px-6 py-2 rounded-full hover:bg-white hover:text-luxury-navy transition-colors duration-300 whitespace-nowrap">Subscribe</button>
                     </form>
+                    <p id="newsletterStatus" class="mt-2 text-sm text-white hidden"></p>
+
                 </div>
             </div>
 
